@@ -1,5 +1,10 @@
-data = input('Enter your name: ')
+createPassword = int(input('Create a password with at least 8 non-sequential caracters: '))
 
-name = f'Typed name: {data}'
+password = createPassword
 
-print(name)
+digitPassword = int(input("Digit your password: "))
+
+if password == digitPassword:
+    print("Valid password !!!")            
+else:
+    print("Invalid password!!!!")    
