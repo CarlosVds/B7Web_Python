@@ -7,18 +7,35 @@
 
 # person()    
 
+# class Product:
+#     def description(data):
+#         print(f'{data.name} custs R$ {data.price}')
+
+
+# p1 = Product()
+# p1.name = 'CD Arlindo Cruz 2005'
+# p1.price = 50
+
+# p2 = Product()
+# p2.name = 'DVD Dudu nobre 2002'
+# p2.price = 40
+
+# p1.description()
+# p2.description()
+
+#Constructor
+
 class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+        
     def description(data):
         print(f'{data.name} custs R$ {data.price}')
 
 
-p1 = Product()
-p1.name = 'CD Arlindo Cruz 2005'
-p1.price = 50
-
-p2 = Product()
-p2.name = 'DVD Dudu nobre 2002'
-p2.price = 40
+p1 = Product('CD Arlindo Cruz 2005', 50)
+p2 = Product('DVD Dudu nobre 2002', 40)
 
 p1.description()
 p2.description()
